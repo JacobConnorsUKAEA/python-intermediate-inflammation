@@ -31,6 +31,7 @@ def test_daily_mean_integers():
     npt.assert_array_equal(daily_mean(test_input), test_result)
 
 def test_load_from_json(tmpdir):
+    
     from inflammation.models import load_json
     example_path = os.path.join(tmpdir, 'example.json')
     with open(example_path, 'w') as temp_json_file:
